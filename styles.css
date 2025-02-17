@@ -1,0 +1,100 @@
+@font-face {
+  font-family: customFont;
+  src: url("assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+body {
+  padding: 50px 0;
+  background-color: #fcf8f5;
+  font-family: customFont;
+}
+
+.contents {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.desserts {
+  width: 65%;
+}
+
+.dessertList {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 0;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.dessertCards {
+  width: fit-content;
+  /* background-color: aqua; */
+  height: fit-content;
+  /* margin-bottom: 10px; */
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 10px; */
+  padding-bottom: 30px;
+}
+
+#desserts-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+}
+
+.Carts {
+  background-color: white;
+  width: 25%;
+  height: fit-content;
+  padding: 20px;
+}
+.cartHeader {
+  color: #be3c11;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.cartItems img {
+  width: 150px;
+  height: 150px;
+}
+.addtoCart {
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 45px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  display: inline-block;
+  /* position: static; */
+  position: relative;
+  top: -20px;
+  left: 45px;
+  background-image: url("./assets/images/icon-add-to-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  text-align: center;
+}
+
+.addtoCart:hover{
+    cursor: pointer;
+}
