@@ -18,7 +18,7 @@ function loadDesserts() {
           <div class="dessertCards" id="desserts-card">
             <div id="desserts-image">
               <img src="${dessert.image.desktop}" alt="dessert image" />
-              <button class="addtoCart">Add to Cart</button>
+              <button class="addtoCart" id="addtoCartBtn">Add to Cart</button>
             </div>
             <div>
               <p id="category">${dessert.category}</p>
@@ -36,3 +36,5 @@ function loadDesserts() {
 }
 
 loadDesserts();
+
+const addtoCartBtn = document.getElementById("addtoCartBtn");
