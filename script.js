@@ -18,8 +18,12 @@ function loadDesserts() {
           <div class="dessertCards" id="desserts-card">
             <div id="desserts-image">
               <picture>
-              <source media="(max-width:650px)" srcset="${dessert.image.tablet}">
-              <source media="(max-width:465px)" srcset="${dessert.image.mobile}">
+              <source media="(max-width:650px)" srcset="${
+                dessert.image.tablet
+              }">
+              <source media="(max-width:465px)" srcset="${
+                dessert.image.mobile
+              }">
               <img src="${dessert.image.desktop}" alt="dessert image" />
               </picture>
               <button class="addtoCart" id="addtoCartBtn">Add to Cart</button>
@@ -40,8 +44,15 @@ function loadDesserts() {
 }
 
 loadDesserts();
+var cartItems = 0;
 
-const addtoCartBtn = document.getElementById("addtoCartBtn");
-// addtoCartBtn.addEventListener("click",()=>{
-
-// })
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("card-header").textContent = `Your Cart (${cartItems})`;
+  document.addEventListener("click", (e) => {
+    if (e.target && e.target.classList.contains("addtoCart")) {
+      cartItems++;
+      document.getElementById("card-header").textContent = `Your Cart (${cartItems})`;
+      console.log(cartItems);
+    }
+  });
+});

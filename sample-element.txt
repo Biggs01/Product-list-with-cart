@@ -1,0 +1,101 @@
+ <!-- static samples -->
+          <!-- <div class="dessertCards" id="desserts-card">
+            <div class="dessertImage" id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>
+          <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>
+          <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>
+          <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>
+          <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>
+          <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>
+          <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>
+          <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div> -->
+
+          <!-- <div class="dessertCards" id="desserts-card">
+            <div id="desserts-image">
+              <img src="../assets/images/image-waffle-desktop.jpg" alt="" />
+              <button class="addtoCart">Add to Cart</button>
+            </div>
+            <div>
+              <p id="category">Waffle</p>
+              <p id="name">Waffle with Berries</p>
+              <p id="price">$6.50</p>
+            </div>
+          </div>-->
