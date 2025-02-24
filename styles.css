@@ -3,6 +3,11 @@
   src: url("assets/fonts/RedHatText-VariableFont_wght.ttf");
 }
 
+:root {
+  --color-white: #fff;
+  --default-fontweight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -59,21 +64,24 @@ body {
 }
 
 .Carts {
-  background-color: white;
-  width: 25%;
+  background-color: var(--color-white);
+  width: 32%;
   height: fit-content;
   padding: 20px;
   border-radius: 5%;
 }
 .cartHeader {
   color: #be3c11;
+  width: 100%;
+  text-align: left;
 }
 
 .cartItems {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 20px;
+  width: inherit;
+  width: 100%;
 }
 
 .cartItems img {
@@ -84,7 +92,6 @@ body {
   width: 140px;
   padding: 12px 15px 12px 40px;
   border: 1px solid gray;
-  /* border: 1px solid #e4e4e4; */
   border-radius: 1.5rem;
   position: relative;
   top: -25px;
@@ -96,17 +103,58 @@ body {
   background-size: 20px;
   text-align: center;
   font-size: 0.9rem;
-  background-color: white;
-
-  /* transition: all 0.3s ease; */
+  background-color: var(--color-white);
+  transition: all 0.3s ease;
 }
-/* 
+
 .addtoCart:hover {
   cursor: pointer;
   background-color: #f8f8f8;
   border-color: #be3c11;
   color: #be3c11;
-} */
+}
+
+.increaseReduce {
+  border-radius: 1.5rem;
+  position: relative;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+  background-color: #be3c11;
+  justify-content: space-between;
+  height: 0%;
+  width: 140px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+}
+
+.increaseReduce > div {
+  border: 1px solid --color-white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#reduce {
+  /* background-color: gold;     */
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#increase {
+  /* background-color: gold; */
+  padding: 3px;
+}
+#cartItemCount {
+  font-size: 1.5rem;
+  /* background-color: gold; */
+}
+
 #category {
   color: gray;
 }
@@ -118,6 +166,82 @@ body {
 #price {
   color: #be3c11;
   font-weight: bold;
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid rgb(240, 238, 238);
+  justify-content: space-between;
+  /* background-color: aqua; */
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.cartItem > svg {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+.cartItem > svg:hover {
+  border: 1px solid black;
+  transform: scale(1.2);
+}
+
+.cartItem > svg > path {
+  padding: 2px;
+  border: 1px solid black;
+  fill: gray;
+}
+.cartItem > svg:hover path {
+  fill: black;
+}
+
+svg {
+  align-self: center;
+}
+
+.confirmOrder {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: #be3c11;
+  color: #fff;
+  border-radius: 1.5rem;
+}
+.confirmOrder:hover {
+  cursor: pointer;
+}
+
+.carbonNeutralContainer{
+  background-color: #FCF8F5;
+  padding: 10px 30px 10px 30px;
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  border-radius: 5px;
+  align-content: baseline;
+}
+.carbonNeutralContainer p{
+  font-size: 0.8rem;
+  padding-left: 10px;
+  width: fit-content;
+  /* background-color: blue; */
+}
+
+.qtyPrice{
+  color:#be3c11;
+  font-weight: 500;
+}
+
+.qtyPrice span{
+  color: #7D7572;
 }
 
 /* Mobile Styles (up to 465px) */
@@ -143,11 +267,13 @@ body {
   .dessertCards {
     width: 100%;
     margin-bottom: 20px;
+    height: 400px;
   }
 
   #desserts-image img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
   }
 
   .Carts {
@@ -158,8 +284,14 @@ body {
   .addtoCart {
     width: 60%;
     font-size: 0.9rem;
-    padding: 8px 15px 8px 35px;
+    padding: 15px 15px 15px 35px;
     background-position: 15%;
+  }
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 100%;
   }
 }
 
@@ -177,18 +309,19 @@ body {
 
   .dessertList {
     grid-template-columns: auto auto;
-    gap: 20px;
+    gap: 10px;
   }
 
   #desserts-image img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
   }
 
   .addtoCart {
-    width: 70%;
+    width: 50%;
     font-size: 0.9rem;
-    padding: 8px 15px 8px 35px;
+    padding: 15px 15px 15px 35px;
     background-position: 12%;
   }
 
@@ -202,5 +335,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 100%;
   }
 }
